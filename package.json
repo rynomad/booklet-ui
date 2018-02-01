@@ -16,7 +16,7 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepublish": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
+    "predeploy": "cd examples/layout && npm install && npm run build",
     "deploy": "gh-pages -d examples/layout/build"
   },
   "peerDependencies": {
