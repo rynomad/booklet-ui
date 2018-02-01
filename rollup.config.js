@@ -20,6 +20,8 @@ export default {
   external: [
     'react',
     'react-dom',
+    'react-router-dom',
+    'mobx-react',
     'prop-types'
   ],
   plugins: [
