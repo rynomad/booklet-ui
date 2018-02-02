@@ -1,14 +1,13 @@
 {
   "name": "booklet-ui-example",
-  "homepage": "https://rynomad.github.io/booklet-ui",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "booklet-ui": "file:../..",
     "prop-types": "^15.4.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "booklet-ui": "^0.0.0",
     "react-scripts": "1.0.13"
   },
   "scripts": {
@@ -16,5 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "puppeteer": "^1.0.0",
+    "serve": "^6.4.9"
   }
 }
