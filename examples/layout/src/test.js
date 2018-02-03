@@ -4,7 +4,7 @@ import path from 'path'
 
 describe('Booklet', function() {
   beforeAll(async () => {
-    execSync('npm install ../..')
+    execSync('npm link booklet-ui')
     execSync('npm install')
     execSync('npm run build')
     return new Promise((resolve) => {
@@ -38,6 +38,5 @@ describe('Booklet', function() {
     const page = await this.browser.newPage()
     await page.goto('http://localhost:5000')
 
-    await page.waitFor(5000)
   });
 });
