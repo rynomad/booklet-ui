@@ -14,7 +14,7 @@ describe('Booklet', function() {
       this.server.stdout.on('data',async d => {
         console.log(d.toString())
         if (d.toString().indexOf('Running') >= 0){
-          this.browser = await puppeteer.launch({headless : false})
+          this.browser = await puppeteer.launch()
           console.log('resolve before')
           resolve()
         } 
